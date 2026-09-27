@@ -25,6 +25,40 @@
   --background-base: var(--spice-color) !important;
 }
 
+:root,
+.encore-dark-theme {
+  --essential-positive: var(--spice-color) !important;
+  --essential-bright-accent: var(--spice-color) !important;
+  --text-positive: var(--spice-color) !important;
+  --text-bright-accent: var(--spice-color) !important;
+}
+
+.progress-bar,
+[data-testid=progress-bar] {
+  --fg-color: var(--spice-color) !important;
+}
+
+.x-progressBar-fillColor {
+  background-color: var(--spice-color) !important;
+}
+
+.progress-bar__slider,
+[data-testid=progress-bar-handle] {
+  background-color: var(--spice-color) !important;
+}
+
+.lyrics-lyrics-container,
+.main-nowPlayingView-lyricsContent,
+.lyrics-lyrics-contentContainer {
+  --lyrics-color-active: var(--spice-color) !important;
+}
+
+button[data-testid=control-button-shuffle][aria-checked=true],
+button[data-testid=control-button-repeat][aria-checked=true],
+button[data-testid=control-button-repeat][aria-checked=mixed] {
+  color: var(--spice-color) !important;
+}
+
 .__background, .main-playButton-primary,
 .ButtonInner-sc-14ud5tc-0,
 .main-button-primary,
