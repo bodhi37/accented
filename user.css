@@ -8,7 +8,6 @@
 .progress-bar,
 .progress-bar:hover,
 .hW9km7ku6_iggdWDR_Lg {
-  --background-base: var(--spice-color) !important;
   --is-active-fg-color: var(--spice-color) !important;
   --spice-button: var(--spice-color) !important;
   --is-active-fg-color: var(--spice-color) !important;
@@ -17,6 +16,13 @@
   --lyrics-color-inactive: #464849 !important;
   --lyrics-color-background: var(--spice-main) !important;
   --lyrics-color-messaging: #333333 !important;
+}
+
+.encore-dark-theme .encore-bright-accent-set,
+.progress-bar,
+.progress-bar:hover,
+.hW9km7ku6_iggdWDR_Lg {
+  --background-base: var(--spice-color) !important;
 }
 
 .__background, .main-playButton-primary,

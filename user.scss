@@ -11,7 +11,6 @@
 .progress-bar,
 .progress-bar:hover,
 .hW9km7ku6_iggdWDR_Lg {
-	--background-base: var(--spice-color) !important;
 	--is-active-fg-color: var(--spice-color) !important;
 	--spice-button: var(--spice-color) !important;
 	--is-active-fg-color: var(--spice-color) !important;
@@ -22,6 +21,17 @@
 	--lyrics-color-inactive: #464849 !important;
 	--lyrics-color-background: var(--spice-main) !important;
 	--lyrics-color-messaging: #333333 !important;
+}
+
+// `--background-base` is the token most of the UI paints itself with, and Spotify defines it
+// on `.encore-dark-theme`, which sits on <html> - the same element `:root` matches. So setting
+// it there leaks the accent colour over the whole window instead of just the accents. It has to
+// stay scoped to the accent sets / widgets that use the token as a fill.
+.encore-dark-theme .encore-bright-accent-set,
+.progress-bar,
+.progress-bar:hover,
+.hW9km7ku6_iggdWDR_Lg {
+	--background-base: var(--spice-color) !important;
 }
 
 .__background,
