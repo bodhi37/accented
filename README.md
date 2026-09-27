@@ -5,9 +5,9 @@ A lightweight theme for [Spicetify](https://github.com/spicetify) that replaces 
 ![preview](./img/preview.png)
 
 > [!NOTE]
-> This repository was a fork of https://github.com/updxg/accented at [576f539a8e9099e1e8bad137b19f47fd52fb1c51](https://github.com/updxg/accented/commit/576f539a8e9099e1e8bad137b19f47fd52fb1c51). It has been detached from the fork network to ensure it shows up in Spicetify's searches since they don't include forks.
+> Maintained fork of https://github.com/JWWolstenholme/accented at [a36d969](https://github.com/JWWolstenholme/accented/commit/a36d96948dbff6629b5253913b5b028e3b630437) (itself a fork of https://github.com/updxg/accented at [576f539](https://github.com/updxg/accented/commit/576f539a8e9099e1e8bad137b19f47fd52fb1c51)). Kept detached from the fork network so it shows up in Spicetify Marketplace searches, which skip forks.
 
-This theme was originally created by [@luximus-hunter](https://github.com/luximus-hunter) in Feb of 2022, survived by [@updxg](https://github.com/updxg)'s fork (among others) after it was deleted or privated, then updated to reappear on the marketplace on this fork. This fork also includes some additional fixes & improvements.
+This theme was originally created by [@luximus-hunter](https://github.com/luximus-hunter) in Feb of 2022, kept alive by [@updxg](https://github.com/updxg)'s fork (among others) after it was deleted, then brought back to the marketplace by [@JWWolstenholme](https://github.com/JWWolstenholme). This fork picks it up from there and fixes the accent colour leaking over the whole window.
 
 ## Color options
 
@@ -34,7 +34,7 @@ Install the theme though the [Spicetify Marketplace](https://github.com/spicetif
 
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes"
-git clone https://github.com/JWWolstenholme/accented
+git clone https://github.com/bodhi37/accented
 spicetify config current_theme accented
 spicetify config color_scheme <color scheme name>
 spicetify apply
@@ -44,7 +44,7 @@ spicetify apply
 
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes"
-git clone https://github.com/JWWolstenholme/accented
+git clone https://github.com/bodhi37/accented
 spicetify config current_theme accented
 spicetify config color_scheme <color scheme name>
 spicetify apply
